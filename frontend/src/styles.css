@@ -1,0 +1,116 @@
+@import '@angular/material/prebuilt-themes/azure-blue.css';
+
+/* Global Dark Style System - AutoMechanic AI */
+
+:root {
+  --bg-primary: #121214;
+  --bg-secondary: #1a1a1e;
+  --accent-cyan: #00d2ff;
+  --accent-cyan-glow: rgba(0, 210, 255, 0.2);
+  --accent-danger: #ff3b30;
+  --accent-warning: #ff9500;
+  --accent-success: #30d158;
+  --text-primary: #ffffff;
+  --text-secondary: #b0b0b8;
+  --text-muted: #8c8c96;
+  --border-glass: rgba(255, 255, 255, 0.08);
+  --bg-glass: rgba(26, 26, 30, 0.65);
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Outfit', sans-serif;
+  color: var(--text-primary);
+  font-weight: 700;
+}
+
+/* Custom premium scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(18, 18, 20, 0.5);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-cyan-glow);
+}
+
+/* Angular Material Form Fields Override for Immersive Dark Theme */
+.dark-field {
+  width: 100%;
+}
+.dark-field .mat-mdc-text-field-wrapper {
+  background-color: rgba(255, 255, 255, 0.02) !important;
+  border-color: rgba(255, 255, 255, 0.1) !important;
+  border-radius: 8px !important;
+}
+.dark-field .mat-mdc-form-field-focus-indicator {
+  border-color: var(--accent-cyan) !important;
+}
+.dark-field .mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-notched-outline__leading,
+.dark-field .mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-notched-outline__notch,
+.dark-field .mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-notched-outline__trailing {
+  border-color: rgba(255, 255, 255, 0.08) !important;
+}
+.dark-field .mdc-text-field--outlined:not(.mdc-text-field--disabled):not(.mdc-text-field--focused):hover .mdc-notched-outline__leading,
+.dark-field .mdc-text-field--outlined:not(.mdc-text-field--disabled):not(.mdc-text-field--focused):hover .mdc-notched-outline__notch,
+.dark-field .mdc-text-field--outlined:not(.mdc-text-field--disabled):not(.mdc-text-field--focused):hover .mdc-notched-outline__trailing {
+  border-color: rgba(255, 255, 255, 0.2) !important;
+}
+.dark-field .mdc-text-field--outlined:not(.mdc-text-field--disabled).mdc-text-field--focused .mdc-notched-outline__leading,
+.dark-field .mdc-text-field--outlined:not(.mdc-text-field--disabled).mdc-text-field--focused .mdc-notched-outline__notch,
+.dark-field .mdc-text-field--outlined:not(.mdc-text-field--disabled).mdc-text-field--focused .mdc-notched-outline__trailing {
+  border-color: var(--accent-cyan) !important;
+  border-width: 2px !important;
+}
+.dark-field input {
+  color: #ffffff !important;
+}
+.dark-field mat-label, 
+.dark-field .mat-mdc-select-value,
+.dark-field .mat-mdc-select-arrow {
+  color: var(--text-secondary) !important;
+}
+
+/* Material Select Popup Styling */
+.cdk-overlay-container {
+  z-index: 2000 !important;
+}
+.mat-mdc-select-panel {
+  background-color: var(--bg-secondary) !important;
+  border: 1px solid var(--border-glass) !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6) !important;
+  border-radius: 8px !important;
+}
+.mat-mdc-option {
+  color: var(--text-secondary) !important;
+}
+.mat-mdc-option:hover:not(.mdc-list-item--disabled),
+.mat-mdc-option.mdc-list-item--selected:not(.mdc-list-item--disabled) {
+  background-color: rgba(0, 210, 255, 0.08) !important;
+  color: var(--accent-cyan) !important;
+}
+.mat-mdc-option.mdc-list-item--selected:not(.mdc-list-item--disabled) .mdc-list-item__primary-text {
+  font-weight: 700 !important;
+}
+
+/* Form Helper Text and Errors */
+.mat-mdc-form-field-subscript-wrapper {
+  font-size: 11px !important;
+}
+.mat-mdc-form-field-error {
+  color: var(--accent-danger) !important;
+  font-weight: 500;
+}
