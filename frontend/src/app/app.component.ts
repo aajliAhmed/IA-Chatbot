@@ -20,7 +20,9 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
       display: flex;
       flex-direction: column;
       min-height: 100vh;
-      background-color: #121214;
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
+      transition: background-color 0.25s ease, color 0.25s ease;
     }
     .main-content-layout {
       flex: 1;
