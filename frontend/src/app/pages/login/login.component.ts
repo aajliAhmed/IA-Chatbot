@@ -122,7 +122,7 @@ import { AuthService } from '../../services/auth.service';
       justify-content: center;
       align-items: center;
       position: relative;
-      background-color: #121214;
+      background-color: var(--bg-primary);
       overflow: hidden;
       padding: 20px;
     }
@@ -163,11 +163,11 @@ import { AuthService } from '../../services/auth.service';
       border-radius: 16px !important;
     }
     .glass-panel {
-      background: rgba(26, 26, 30, 0.65) !important;
+      background: var(--bg-elevated) !important;
       backdrop-filter: blur(20px);
       -webkit-backdrop-filter: blur(20px);
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+      border: 1px solid var(--border-glass);
+      box-shadow: var(--shadow-panel);
     }
     .auth-header {
       text-align: center;
@@ -185,7 +185,7 @@ import { AuthService } from '../../services/auth.service';
       margin-bottom: 15px;
     }
     .auth-icon-badge mat-icon {
-      color: #00d2ff;
+      color: var(--accent-cyan);
       font-size: 36px;
       width: 36px;
       height: 36px;
@@ -193,16 +193,16 @@ import { AuthService } from '../../services/auth.service';
     .auth-header h1 {
       font-family: 'Outfit', sans-serif;
       font-weight: 800;
-      color: #ffffff;
+      color: var(--text-primary);
       font-size: 26px;
       margin: 0;
     }
     .accent-text {
-      color: #00d2ff;
+      color: var(--accent-cyan);
     }
     .subtitle {
       font-size: 13px;
-      color: #b0b0b8;
+      color: var(--text-secondary);
       margin: 8px 0 0 0;
       font-weight: 400;
     }
@@ -217,7 +217,7 @@ import { AuthService } from '../../services/auth.service';
     .submit-btn {
       height: 50px !important;
       background: linear-gradient(135deg, #00b4db, #00d2ff) !important;
-      color: #000000 !important;
+      color: var(--cta-text) !important;
       font-weight: 700 !important;
       font-size: 15px !important;
       border-radius: 8px !important;
@@ -234,8 +234,8 @@ import { AuthService } from '../../services/auth.service';
       transform: translateY(-1px);
     }
     .submit-btn:disabled {
-      background: rgba(255, 255, 255, 0.12) !important;
-      color: rgba(255, 255, 255, 0.3) !important;
+      background: var(--bg-disabled) !important;
+      color: var(--text-disabled) !important;
       box-shadow: none;
     }
     .toggle-mode {
@@ -248,10 +248,10 @@ import { AuthService } from '../../services/auth.service';
       gap: 5px;
     }
     .muted-text {
-      color: #8c8c96;
+      color: var(--text-muted);
     }
     .toggle-btn {
-      color: #00d2ff !important;
+      color: var(--accent-cyan) !important;
       font-weight: 600 !important;
       padding: 0 5px !important;
       min-width: unset !important;
@@ -293,15 +293,15 @@ import { AuthService } from '../../services/auth.service';
       display: flex;
       align-items: center;
       gap: 8px;
-      background: rgba(255, 255, 255, 0.04);
+      background: var(--bg-muted);
       padding: 6px 14px;
       border-radius: 30px;
-      border: 1px solid rgba(255, 255, 255, 0.06);
+      border: 1px solid var(--border-subtle);
       font-size: 12px;
-      color: #b0b0b8;
+      color: var(--text-secondary);
     }
     .badge-icon {
-      color: #00d2ff;
+      color: var(--accent-cyan);
       font-size: 15px;
       width: 15px;
       height: 15px;
