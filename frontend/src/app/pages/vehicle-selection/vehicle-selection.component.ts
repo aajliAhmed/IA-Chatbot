@@ -101,7 +101,7 @@ import { Brand, CarModel } from '../../models/vehicle.model';
       justify-content: center;
       align-items: center;
       position: relative;
-      background-color: #121214;
+      background-color: var(--bg-primary);
       overflow: hidden;
       padding: 20px;
     }
@@ -124,11 +124,11 @@ import { Brand, CarModel } from '../../models/vehicle.model';
       border-radius: 16px !important;
     }
     .glass-panel {
-      background: rgba(26, 26, 30, 0.65) !important;
+      background: var(--bg-elevated) !important;
       backdrop-filter: blur(20px);
       -webkit-backdrop-filter: blur(20px);
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+      border: 1px solid var(--border-glass);
+      box-shadow: var(--shadow-panel);
     }
     .selection-header {
       text-align: center;
@@ -146,7 +146,7 @@ import { Brand, CarModel } from '../../models/vehicle.model';
       margin-bottom: 15px;
     }
     .vehicle-badge mat-icon {
-      color: #00d2ff;
+      color: var(--accent-cyan);
       font-size: 32px;
       width: 32px;
       height: 32px;
@@ -154,14 +154,14 @@ import { Brand, CarModel } from '../../models/vehicle.model';
     .selection-header h1 {
       font-family: 'Outfit', sans-serif;
       font-weight: 800;
-      color: #ffffff;
+      color: var(--text-primary);
       font-size: 26px;
       margin: 0;
       letter-spacing: -0.5px;
     }
     .subtitle {
       font-size: 13px;
-      color: #b0b0b8;
+      color: var(--text-secondary);
       margin: 10px 0 0 0;
       line-height: 1.6;
     }
@@ -174,7 +174,7 @@ import { Brand, CarModel } from '../../models/vehicle.model';
       width: 100%;
     }
     .form-prefix-icon {
-      color: #8c8c96;
+      color: var(--text-muted);
       margin-right: 8px;
     }
     .field-spinner {
@@ -183,7 +183,7 @@ import { Brand, CarModel } from '../../models/vehicle.model';
     .diagnostic-btn {
       height: 52px !important;
       background: linear-gradient(135deg, #00b4db, #00d2ff) !important;
-      color: #000000 !important;
+      color: var(--cta-text) !important;
       font-weight: 700 !important;
       font-size: 15px !important;
       border-radius: 8px !important;
@@ -201,8 +201,8 @@ import { Brand, CarModel } from '../../models/vehicle.model';
       transform: translateY(-2px);
     }
     .diagnostic-btn:disabled {
-      background: rgba(255, 255, 255, 0.08) !important;
-      color: rgba(255, 255, 255, 0.3) !important;
+      background: var(--bg-disabled) !important;
+      color: var(--text-disabled) !important;
       box-shadow: none;
     }
     .btn-icon {
